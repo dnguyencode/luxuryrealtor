@@ -1,0 +1,38 @@
+html,
+body {
+    font-family: "Lato", sans-serif;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+.content {
+    display: table;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+iframe {
+    transition: opacity 500ms ease-in-out;
+    transition-delay: 250ms;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    opacity: 1;
+    width: 1902.22px;
+    height: 1070px;
+}
+.youtube-background {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    overflow: hidden;
+    inset: 0px;
+    pointer-events: none;
+    background-image: url('https://img.youtube.com/vi/eEpEeyqGlxA/maxresdefault.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
